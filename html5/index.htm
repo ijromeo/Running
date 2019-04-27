@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>R U N N I N G</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>		<!--viewport para adaptarse al ancho de la pantalla-->				
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css"/>  <!--usamos sus hojas de estilo publicas-->     				
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+		<link rel="stylesheet" href="estilos.css">
+	</head>	
+	<body>
+		<div data-role="page" id="home"> <!-- el data role nos dice que va a funcionar como una pagina-->
+			<div data-role="header">
+				<img src="imagenes/logo.gif" class="logo" alt="logo" width="30" height="30"/>
+				<h1>R U N N I N G</h1>
+			</div>
+			
+			
+			<div data-role="content">
+				<ul data-role="listview"data-inset="true"><!--ul lista sin numerar y cada li es la opcion del menu-->
+					<li data-role="list-divider">Men&uacute; Principal</li>
+					<li><a href="#profesores" data-transition="slide">Ranking de promedios</a></li><!--crea un titulo y con data transition pongo transiciones entre las paginas-->
+					<li><a href="temas.htm" data-ajax="false">Inscripciones</a></li><!--referencio a una pagina externa..el data ajax si no lo uso no anda el link-->
+				</ul>
+			</div>
+			
+			<div data-role="footer">
+				&nbsp;&nbsp;Tel:<a href="tel:1558022401">1558022401</a>
+				&nbsp;&nbsp;
+				CONTACTO <a href="https://www.facebook.com/">Encontranos en FACEBOOK</a>
+			</div>
+		</div><!--cierre de home-->
+		
+		<div data-role="page" id="profesores"> <!-- el data role nos dice que va a funcionar como una pagina-->
+			<div data-role="header">
+				<img src="imagenes/logo.gif" class="logo" alt="logo" width="30" height="30"/>
+				<h1>R U N N I N G</h1>
+				<a href="#home" data-role="button" data-icon="home" data-transition="flip" class="ui-btn-right">Home</a><!--link para volver-->
+			</div>
+			
+			
+			
+			<div data-role="content">
+				<ul data-role="listview"data-inset="true"><!--ul lista sin numerar y cada li es la opcion del menu-->
+					<li data-role="list-divider">C A R R E R A S </li><!--crea un titulo-->
+					<li>
+						<img src="imagenes/rocio.jpg" alt="rocio" height="80" width="80">42 Kmts  -  02:50:21:16.19</img>
+						<h2>Rocio Lopez</h2>
+					</li>
+					
+					<li>
+						<img src="imagenes/pablo.jpg" alt="pablo" height="80" width="80">42 Kmts  -  02:50:27:11.19</img>
+						<h2>Pablo Vera</h2>
+					</li>
+				</ul>
+			</div>
+			
+			<div data-role="footer">
+				Tel:<a href="tel:1558022401">1558022401</a>
+				&nbsp;&nbsp;
+				CONTACTO: <a href="https://www.facebook.com/">Encontranos en FACEBOOK</a>
+				
+			</div>
+		</div><!--cierre de profesores-->
+		
+	</body>
+</html>	

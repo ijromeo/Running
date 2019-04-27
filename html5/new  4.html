@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CACIC 2014</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>		<!--viewport para adaptarse al ancho de la pantalla-->				
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css"/>  <!--usamos sus hojas de estilo publicas-->     				
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+		<link rel="stylesheet" href="estilos.css">
+	</head>	
+	
+	<body>
+		<div data-role="page" id="temas"> <!-- el data role nos dice que va a funcionar como una pagina-->
+			<div data-role="header">
+				<img src="imagenes/logo.gif" class="logo" alt="logo" width="30" height="30"/>
+				<h1>CACIC 2014</h1>
+				<div data-type="horizontal" data-role="controlgroup" class="ui-btn-right">
+					<a href="index.htm" data-role="button" data-icon="home" data-ajax="false">Home</a>
+					<a href="temas.htm" data-role="button" data-icon="back" data-ajax="false">Volver</a><!--link para volver-->
+				</div>
+			</div>
+			
+			
+			
+			<div data-role="content">
+				<div data-role="collapsible" data-collapsed="false"><!-- el false para que este abierta sino por defecto esta cerrada..podemos poner controles..texto..etv en cada coapsible-->
+					<h4>Unidad 1</h4>
+						<ul data-role="listview">
+							<li><a href="intro.htm" data-ajax="false">Introducci&oacute;n</a></li>
+							<li><a href="" data-ajax="false">La web</a></li>
+							<li><a href="" data-ajax="false">otra opcion</a></li>
+						</ul>
+				</div>
+			
+			
+				<div data-role="collapsible" data-collapsed="false"><!-- el false para que este abierta sino por defecto esta cerrada-->
+					<h4>Unidad 2</h4>
+						<ul data-role="listview">
+							<li><a href="index.htm" data-ajax="false">cosa dos</a></li>
+							<li><a href="" data-ajax="false">host</a></li>
+							<li><a href="" data-ajax="false">byethost</a></li>
+						</ul>
+				</div>
+			</div>
+			
+			
+			
+			<div data-role="footer">
+				Tel:<a href="tel:44808900">4480-8900</a>
+				&nbsp;&nbsp;
+				UNLaM <a href="http://www.unlam.edu.ar">Sitio de la universidad</a>
+			</div>
+		</div><!--cierre de profesores-->
+	</body>
+</html>

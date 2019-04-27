@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> R U N N I N G </title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>		<!--viewport para adaptarse al ancho de la pantalla-->				
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css"/>  <!--usamos sus hojas de estilo publicas-->     				
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+		<link rel="stylesheet" href="estilos.css">
+	</head>	
+	
+	<body>
+		<div data-role="page" id="temas"> <!-- el data role nos dice que va a funcionar como una pagina-->
+			<div data-role="header">
+				<img src="imagenes/logo.gif" class="logo" alt="logo" width="30" height="30"/>
+				<h1>R U N N I N G</h1>
+				<a href="index.htm" data-role="button" data-icon="home" data-ajax="false" class="ui-btn-right">Home</a>
+			</div>
+			
+			
+			
+			<div data-role="content">
+				<div data-role="collapsible" data-collapsed="false"><!-- el false para que este abierta sino por defecto esta cerrada..podemos poner controles..texto..etv en cada coapsible-->
+					<h4>LA LUCILA CORRE</h4>
+						<ul data-role="listview">
+							<li><a href="intro.htm" data-ajax="false">10 KM</a></li>
+							<li><a href="" data-ajax="false">6 KM</a></li>
+							<li><a href="" data-ajax="false">2 KM</a></li>
+						</ul>
+				</div>
+			
+			
+				<div data-role="collapsible" data-collapsed="false"><!-- el false para que este abierta sino por defecto esta cerrada-->
+					<h4>NAT GEO RUN </h4>
+						<ul data-role="listview">
+							<li><a href="intro.htm" data-ajax="false">10 KM</a></li>
+							<li><a href="" data-ajax="false">6 KM</a></li>
+							<li><a href="" data-ajax="false">2 KM</a></li>
+						</ul>
+				</div>
+			</div>
+			
+			
+			
+			<div data-role="footer">
+				Tel:<a href="tel:1558022401">1558022401</a>
+				&nbsp;&nbsp;
+				CONTACTO <a href="https://www.facebook.com/">Encontranos en FACEBOOK</a>
+			</div>
+		</div><!--cierre de profesores-->
+	</body>
+</html>
